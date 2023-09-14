@@ -1,2 +1,2 @@
-# culturalhomogenization.github.io
-Website for Team Project.
+# THIS WEBSITE IS STILL UNDERDEVELOPMENT
+UNFINISHED 
