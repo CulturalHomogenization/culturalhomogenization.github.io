@@ -232,7 +232,7 @@ footer p{
   font-size: 0.8em;
 }
 .prevention{
-  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('images/culturaldance.webp');
+  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('https://raw.githubusercontent.com/CulturalHomogenization/culturalhomogenization.github.io/main/Images/CulturalDance.webp');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
