@@ -6,8 +6,17 @@
   scroll-behavior: smooth;
 }
 p{
+  margin-top: 1.1em;
   font-weight: 300;
   color: #111;
+  font-size: 1.1em;
+}
+p span{
+  font-weight: 600;
+  color: #000;
+}
+p a{
+  text-decoration: none;
 }
 header{
   display: flex;
@@ -68,15 +77,17 @@ header .nav-links li a:hover{
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('Images/CultureBanner.jpg');
+  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('https://raw.githubusercontent.com/CulturalHomogenization/culturalhomogenization.github.io/main/Images/CultureBanner.webp');
   background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
 }
 .banner .content{
   max-width: 900px;
   text-align: center;
   overflow: hidden;
 }
-.banner .content h2{
+.banner .content h1{
   font-size: 4em;
   color: #fff;
 }
@@ -91,6 +102,7 @@ header .nav-links li a:hover{
   display: inline-block;
   padding: 10px 30px;
   margin: 20px;
+  margin-left: 0;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 2px;
@@ -103,19 +115,35 @@ section{
   padding: 100px;
 }
 .row{
+  min-height: 350px;
   position: relative;
   width: 100%;
   display: flex;
   justify-content: space-between;
+  margin-top: 30px;
 }
 .row .column{
   position: relative;
   width: 48%;
 }
+.row .column100{
+  width: 100% !important;
+}
+.about{
+  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('https://raw.githubusercontent.com/CulturalHomogenization/culturalhomogenization.github.io/main/Images/scottishbuilding.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.about .content, .prevention .content{
+  background-color: #fff;
+  padding: 30px;
+}
 .titleText{
   color: #111;
   font-size: 2em;
-  font-weight: 300;
+  font-weight: 400;
 }
 .titleText span{
   color: #ff0157;
@@ -136,10 +164,10 @@ section{
   object-fit: cover;
 }
 .footnote{
-  font-size: 0.5rem;
+  font-size: 0.7rem;
   color: #111;
-  font-weight: 600;
-  padding: 1px;
+  font-weight: 400;
+  padding: 4px;
   vertical-align: super;
 }
 
@@ -155,7 +183,7 @@ section{
 .footnotes{
   margin-top: 50px;
   position: relative;
-  max-width: 50%;
+  max-width: 80%;
 }
 .footnotes li{
   font-size: 0.7em;
@@ -186,241 +214,29 @@ iframe {
 .white{
   color: #fff;
 }
-.video{
-  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('Images/image3.jpg');
-  background-size: cover;
-}
-.causeslist{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.causeslist:hover .card{
-  opacity: 0.5;
-}
-.causeslist .card{
-  width: 300px;
-  height: 400px;
-  background: #111;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 30px;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
+.column.images .imageBox{
   position: relative;
 }
-.causeslist .card::before{
+footer{
+  position: relative;
+}
+/*footer::before{
   content: '';
   position: absolute;
-  top: 2px;
-  left: 2px;
-  bottom: 2px;
-  width: 50%;
-  pointer-events: none;
-  background: rgba(255, 255, 255, 0.1);
+  width: 40%;
+  height: 2px;
+  background: #111;
+  top: -5px;
+}*/
+footer p{
+  font-size: 0.8em;
 }
-.causeslist .card .content{
-  padding: 30px;
-  text-align: center;
-}
-.causeslist .card .content h2{
-  position: absolute;
-  right: 30px;
-  font-size: 4em;
-  font-weight: 800;
-  color: #ff0157;
-  z-index: 1;
-  opacity: 0.1;
-  transition: 0.5s;
-}
-.causeslist .card:hover .content h2{
-  transform: translateY(-70px);
-  opacity: 1;
-}
-.causeslist .card .content h3{
-  position: relative;
-  font-size: 1.5em;
-  color: #fff;
-  z-index: 2;
-  opacity: 0.5;
-  letter-spacing: 1px;
-  transition: 0.5s;
-}
-.causeslist .card .content p{
-  position: relative;
-  font-size: 0.7rem;
-  font-weight: 300;
-  color: #fff;
-  z-index: 2;
-  opacity: 0.5;
-  transition: 0.5s;
-  text-align: justify;
-}
-.causeslist .card:hover .content h3,
-.causeslist .card:hover .content p,
-.causeslist .card:hover span,
-.causeslist .card:hover{
-  opacity: 1;
-}
-.causeslist .card .content button{
-  display: inline-block;
-  margin-top: 15px;
-  padding: 8px 15px;
-  background: #fff;
-  color: #111;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 600;
-}
-.causes{
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: #fff;
-}
-.causeslist .card span{
-  transition: 0.5s;
-  opacity: 0;
-}
-.causeslist .card span:nth-child(1){
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 3px;
-  background: linear-gradient(to right, transparent, #ff0157);
-  animation: animate1 2s linear infinite;
-}
-.causeslist .card span:nth-child(2){
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 3px;
-  height: 100%;
-  background: linear-gradient(to bottom, transparent, #ff0157);
-  animation: animate2 2s linear infinite;
-  animation-delay: 1s;
-}.causeslist .card span:nth-child(3){
-  position: absolute;
-  bottom: 0;
-  right: 100%;
-  width: 100%;
-  height: 3px;
-  background: linear-gradient(to left, transparent, #ff0157);
-  animation: animate3 2s linear infinite;
-}.causeslist .card span:nth-child(4){
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 3px;
-  height: 100%;
-  background: linear-gradient(to top, transparent, #ff0157);
-  animation: animate4 2s linear infinite;
-  animation-delay: 1s;
-}
-@keyframes animate1 {
-  0%{
-    transform: translateX(-100%);
-  }
-  100%{
-    transform: translateX(100%);
-  }
-}
-@keyframes animate2 {
-  0%{
-    transform: translateY(-100%);
-  }
-  100%{
-    transform: translateY(100%);
-  }
-}
-@keyframes animate3 {
-  0%{
-    transform: translateX(200%);
-  }
-  100%{
-    transform: translateX(0%);
-  }
-}
-@keyframes animate4 {
-  0%{
-    transform: translateY(100%);
-  }
-  100%{
-    transform: translateY(-100%);
-  }
-}
-.causes h1{
-  font-size: 60px;
-  color: #191919;
-}
-.modal {
-  position: fixed;
-  top: 15%;
-  bottom: 10%;
-  transition: 200ms ease-in-out;
-  border: 1px solid black;
-  border-radius: 10px;
-  z-index: 10;
-  background-color: white;
-  width: 1000px;
-  max-width: 80%;
-  transform: scale(0);
-  overflow-y: scroll;
-}
-
-.modal.active {
-  transform: scale(1);
-}
-
-.modal-header {
-  padding: 10px 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid black;
-}
-
-.modal-header .heading {
-  font-size: 1.25rem;
-  font-weight: bold;
-}
-
-.modal-header .close-button {
-  cursor: pointer;
-  border: none;
-  outline: none;
-  background: none;
-  font-size: 1.25rem;
-  font-weight: bold;
-}
-
-.modal-body {
-  padding: 10px 15px;
-  display: flex;
-}
-
-#overlay {
-  position: fixed;
-  opacity: 0;
-  transition: 200ms ease-in-out;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, .5);
-  pointer-events: none;
-}
-
-#overlay.active {
-  opacity: 1;
-  pointer-events: all;
+.prevention{
+  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('images/culturaldance.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 @media (max-width: 991px){
   header, header.sticky{
@@ -433,14 +249,14 @@ iframe {
     position: relative;
     width: 40px;
     height: 40px;
-    background: url("Images/menu.jpg");
+    background: url("https://raw.githubusercontent.com/CulturalHomogenization/culturalhomogenization.github.io/main/Images/menu.webp");
     background-size: 30px;
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
   }
   .menuToggle.active{
-    background: url("Images/close.jpg");
+    background: url("https://raw.githubusercontent.com/CulturalHomogenization/culturalhomogenization.github.io/main/Images/close.webp");
     background-size: 30px;
     background-repeat: no-repeat;
     background-position: center;
@@ -468,15 +284,15 @@ iframe {
   }
   header .nav-links li a{
     text-decoration: none;
-    font-size: 1.6em;
+    font-size: 1.3em;
     color: #111;
     font-weight: 300;
   }
   section{
     padding: 20px;
   }
-  .banner .content h2{
-    font-size: 3em;
+  .banner .content h1{
+    font-size: 2em;
   }
   .row{
     flex-direction: column;
@@ -485,8 +301,18 @@ iframe {
     position: relative;
     width: 100%;
   }
+  .row .column p{
+    font-size: 1.2em;
+  }
   .row .column .imageBox{
     height: 300px;
+    width: 100%;
     margin-top: 20px;
+  }
+  .titleText{
+    font-size: 1.8em;
+    line-height: 1.5em;
+    margin-bottom: 15px;
+    font-weight: 300;
   }
 }
