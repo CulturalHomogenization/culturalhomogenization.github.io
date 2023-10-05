@@ -18,6 +18,9 @@ p span{
 p a{
   text-decoration: none;
 }
+.smallText{
+  font-size: 0.9em;
+}
 header{
   display: flex;
   justify-content: space-between;
