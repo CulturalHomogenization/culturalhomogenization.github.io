@@ -17,6 +17,10 @@ p span{
 }
 p a{
   text-decoration: none;
+  font-style: italic;
+}
+p a:hover{
+  text-decoration: underline;
 }
 .smallText{
   font-size: 0.9em;
@@ -98,7 +102,7 @@ header .nav-links li a:hover{
   font-size: 1em;
   color: #fff;
 }
-a.btn{
+.btn{
   font-size: 1em;
   color: #fff;
   background: #980030;
