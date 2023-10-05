@@ -77,7 +77,7 @@ header .nav-links li a:hover{
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('https://raw.githubusercontent.com/CulturalHomogenization/culturalhomogenization.github.io/main/Images/CultureBanner.webp');
+  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('Images/CultureBanner.webp');
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -130,7 +130,7 @@ section{
   width: 100% !important;
 }
 .about{
-  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('https://raw.githubusercontent.com/CulturalHomogenization/culturalhomogenization.github.io/main/Images/scottishbuilding.webp');
+  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('Images/scottishbuilding.webp');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -232,7 +232,7 @@ footer p{
   font-size: 0.8em;
 }
 .prevention{
-  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('https://raw.githubusercontent.com/CulturalHomogenization/culturalhomogenization.github.io/main/Images/CulturalDance.webp');
+  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('Images/CulturalDance.webp');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -249,14 +249,14 @@ footer p{
     position: relative;
     width: 40px;
     height: 40px;
-    background: url("https://raw.githubusercontent.com/CulturalHomogenization/culturalhomogenization.github.io/main/Images/menu.webp");
+    background: url("Images/menu.webp");
     background-size: 30px;
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
   }
   .menuToggle.active{
-    background: url("https://raw.githubusercontent.com/CulturalHomogenization/culturalhomogenization.github.io/main/Images/close.webp");
+    background: url("Images/close.webp");
     background-size: 30px;
     background-repeat: no-repeat;
     background-position: center;
