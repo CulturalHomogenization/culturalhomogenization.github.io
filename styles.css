@@ -110,6 +110,7 @@ header .nav-links li a:hover{
   text-decoration: none;
   letter-spacing: 2px;
   transition: 0.5s;
+  font-weight: 800;
 }
 .btn:hover{
   letter-spacing: 6px;
