@@ -98,7 +98,7 @@ header .nav-links li a:hover{
   font-size: 1em;
   color: #fff;
 }
-.btn{
+a.btn{
   font-size: 1em;
   color: #fff;
   background: #980030;
