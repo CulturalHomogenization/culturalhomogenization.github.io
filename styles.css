@@ -57,7 +57,7 @@ header .logo{
   font-size: 2em;
 }
 header .logo span{
-  color: #A30034;
+  color: #A70035;
 }
 header .nav-links li{
   margin-left: 30px;
@@ -75,7 +75,7 @@ header.sticky .nav-links li a{
   color: #111;
 }
 header .nav-links li a:hover{
-  color: #A30034;
+  color: #A70035;
 }
 .banner{
   position: relative;
@@ -102,10 +102,10 @@ header .nav-links li a:hover{
   font-size: 1em;
   color: #fff;
 }
-.btn{
+a.btn{
   font-size: 1em;
   color: #fff;
-  background: #980030;
+  background: #A70035;
   display: inline-block;
   padding: 10px 30px;
   margin: 20px;
@@ -115,7 +115,6 @@ header .nav-links li a:hover{
   letter-spacing: 2px;
   transition: 0.5s;
   font-weight: 800;
-  border: 3px solid black;
 }
 .btn:hover{
   letter-spacing: 6px;
@@ -154,7 +153,7 @@ section{
   font-weight: 400;
 }
 .titleText span{
-  color: #A30034;
+  color: #A70035;
   font-weight: 700;
   font-size: 1.5em;
 }
@@ -245,6 +244,22 @@ footer p{
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+}
+.hidden{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(50px);
+  transition: all 500ms;
+}
+.show{
+  filter: none;
+  transform: translateY(0);
+  opacity: 1;
+}
+@media (perfers-reduced-motion) {
+  .hidden{
+    transition: none;
+  }
 }
 @media (max-width: 991px){
   header, header.sticky{
