@@ -248,6 +248,24 @@ footer{
 footer p{
   font-size: 0.8em;
 }
+.notfinished{
+  position: fixed;
+  z-index: 9999999999999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.notfinished h1{
+  font-size: 3em;
+}
+@media (max-width: 991px){
+  .notfinished h1{
+    font-size: 1.5em;
+  }
+}
 .Celebrations{
   background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('Images/IndianCelebration.webp');
   background-repeat: no-repeat;
