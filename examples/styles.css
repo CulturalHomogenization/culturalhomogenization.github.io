@@ -1,0 +1,369 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+p{
+  margin-top: 1.1em;
+  font-weight: 300;
+  color: #111;
+  font-size: 1.1em;
+}
+p span{
+  font-weight: 600;
+  color: #000;
+}
+p a{
+  text-decoration: none;
+  font-style: italic;
+}
+p a:hover{
+  text-decoration: underline;
+}
+.smallText{
+  font-size: 0.9em;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100000000;
+  align-items: center;
+  transition: 0.5s;
+}
+header.sticky{
+  background: #fff;
+  padding: 10px 100px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+header.sticky .logo{
+  color: #111;
+}
+header .nav-links{
+  display: flex;
+  position: relative;
+  list-style: none;
+}
+header .logo{
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 2em;
+}
+header .logo span{
+  color: #A70035;
+}
+header .nav-links li{
+  margin-left: 30px;
+}
+header .nav-links li a{
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+  font-weight: 300;
+  padding: 10px 15px;
+  border-radius: 30px;
+  transition: 250ms all ease-in-out;
+}
+header.sticky .nav-links li a{
+  color: #111;
+}
+header .nav-links li a:hover{
+  color: #A70035;
+}
+.banner{
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('Images/BusyCity.webp');
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+.banner .content{
+  max-width: 900px;
+  text-align: center;
+  overflow: hidden;
+}
+.banner .content h1{
+  font-size: 2.8em;
+  color: #fff;
+}
+.banner .content p{
+  font-size: 1em;
+  color: #fff;
+}
+a.btn{
+  font-size: 1em;
+  color: #fff;
+  background: #A70035;
+  display: inline-block;
+  padding: 10px 30px;
+  margin: 20px;
+  margin-left: 0;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: 0.5s;
+  font-weight: 800;
+}
+.btn:hover{
+  letter-spacing: 6px;
+}
+section{
+  padding: 100px;
+}
+.row{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.column{
+  position: relative;
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.column100{
+  width: 100% !important;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.food{
+  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('Images/Food.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.food .content, .Celebrations .content{
+  background-color: #fff;
+  padding: 30px;
+  width: 100%;
+  position: relative;
+}
+.titleText{
+  color: #111;
+  font-size: 2em;
+  font-weight: 400;
+}
+.titleText span{
+  color: #A70035;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+.imageBox{
+  position: relative;
+  width: 80%;
+  aspect-ratio: 17/9;
+  margin: 5vh 0;
+}
+.imageBox img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.footnote{
+  font-size: 0.7rem;
+  color: #111;
+  font-weight: 400;
+  padding: 4px;
+  vertical-align: super;
+}
+
+.footnotes::before{
+  content: '';
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  background: #111;
+}
+.footnotes{
+  margin-top: 50px;
+  position: relative;
+  max-width: 80%;
+}
+.footnotes li{
+  font-size: 0.7em;
+}
+.container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+}
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+.title{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+}
+.white{
+  color: #fff;
+}
+.column.images .imageBox{
+  position: relative;
+}
+footer{
+  position: relative;
+}
+/*footer::before{
+  content: '';
+  position: absolute;
+  width: 40%;
+  height: 2px;
+  background: #111;
+  top: -5px;
+}*/
+footer p{
+  font-size: 0.8em;
+}
+.notfinished{
+  position: fixed;
+  z-index: 9999999999999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.notfinished h1{
+  font-size: 3em;
+}
+@media (max-width: 991px){
+  .notfinished h1{
+    font-size: 1.5em;
+  }
+}
+.Celebrations{
+  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('Images/IndianCelebration.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.hidden{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(50px);
+  transition: all 500ms;
+}
+.show{
+  filter: none;
+  transform: translateY(0);
+  opacity: 1;
+}
+@media (perfers-reduced-motion) {
+  .hidden{
+    transition: none;
+  }
+}
+@media (max-width: 991px){
+  header, header.sticky{
+    padding: 10px 20px;
+  }
+  header .nav-links{
+    display: none;
+  }
+  .menuToggle{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: url("Images/menu.webp");
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+  .menuToggle.active{
+    background: url("Images/close.webp");
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  header .menuToggle{
+    filter: invert(1);
+  }
+  header.sticky .menuToggle{
+    filter: invert(0);
+  }
+  header .nav-links.active{
+    width: 100%;
+    height: calc(100% - 68px);
+    position: fixed;
+    top: 68px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #fff;
+  }
+  header .nav-links li{
+    margin-left: 0;
+  }
+  header .nav-links li a{
+    text-decoration: none;
+    font-size: 1.3em;
+    color: #111;
+    font-weight: 300;
+  }
+  section{
+    padding: 20px;
+  }
+  .banner .content h1{
+    font-size: 2em;
+  }
+  .row{
+    flex-direction: column;
+  }
+  .row .column{
+    position: relative;
+    width: 100%;
+  }
+  .row .column p{
+    font-size: 1.2em;
+  }
+  .row .column .imageBox{
+    height: 300px;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .titleText{
+    font-size: 1.8em;
+    line-height: 1.5em;
+    margin-bottom: 15px;
+    font-weight: 300;
+  }
+}
