@@ -152,6 +152,11 @@ section{
   background-position: center;
   background-attachment: fixed;
 }
+@supports not (background-attachment: fixed){
+  .food, .Celebrations{
+    background-attachment: static;
+  }
+}
 .food .content, .Celebrations .content{
   background-color: #fff;
   padding: 30px;
