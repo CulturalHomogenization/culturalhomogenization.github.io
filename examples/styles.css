@@ -87,8 +87,7 @@ header .nav-links li a:hover{
   background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('Images/BusyCity.webp');
   background-size: cover;
   background-position: center center;
-  background-attachment: fixed;
-  -o-background-attachment: scroll;
+  background-attachment: scroll;
 }
 .banner .content{
   max-width: 900px;
@@ -151,9 +150,7 @@ section{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
-  -o-background-attachment: scroll;
-
+  background-attachment: scroll;
 }
 .food .content, .Celebrations .content{
   background-color: #fff;
@@ -274,8 +271,7 @@ footer p{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
-  -o-background-attachment: scroll;
+  background-attachment: scroll;
 }
 .hidden{
   opacity: 0;

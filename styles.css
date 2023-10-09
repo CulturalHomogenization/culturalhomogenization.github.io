@@ -87,9 +87,9 @@ header .nav-links li a:hover{
   background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('Images/CultureBanner.webp');
   background-size: cover;
   background-position: center center;
-  background-attachment: fixed;
-  -o-background-attachment: scroll;
+  background-attachment: scroll;
 }
+
 .banner .content{
   max-width: 900px;
   text-align: center;
@@ -142,8 +142,7 @@ section{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
-  -o-background-attachment: scroll;
+  background-attachment: scroll;
 
 }
 .about .content, .prevention .content{
@@ -246,9 +245,7 @@ footer p{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
-  -o-background-attachment: scroll;
-
+  background-attachment: scroll;
 }
 @supports not (background-attachment: fixed){
   .about, .prevention, .banner{
