@@ -247,7 +247,7 @@ footer p{
 }
 @supports not (background-attachment: fixed){
   .about, .prevention, .banner{
-    background-attachment: static;
+    background-attachment: scroll;
   }
 }
 .hidden{
