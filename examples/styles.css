@@ -23,6 +23,7 @@ dialog{
   border: 1px solid black;
   border-radius: 5px;
   padding: 0 5px;
+  color: #000;
   transition: all 500ms ease-in-out;
 }
 .buttonModal:hover{
