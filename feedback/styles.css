@@ -5,6 +5,95 @@
   font-family: 'Poppins', sans-serif;
   scroll-behavior: smooth;
 }
+.button{
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  overflow: hidden;
+  transition: 500ms;
+  font-weight: 700;
+  padding: 20px;
+  align-self: center;
+  margin: 30px;
+  width: 250px;
+}
+.button:hover{
+  background: #fff;
+  color: #111;
+}
+.button span{
+  position: absolute;
+  display: block;
+}
+.button span:nth-child(1){
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #fff);
+  animation: line1 1s linear infinite;
+}
+.button span:nth-child(2){
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #fff);
+  animation: line2 1s linear infinite;
+  animation-delay: 250ms;
+}
+.button span:nth-child(3){
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #fff);
+  animation: line3 1s linear infinite;
+  animation-delay: 500ms;
+}
+.button span:nth-child(4){
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #fff);
+  animation: line4 1s linear infinite;
+  animation-delay: 750ms;
+}
+@keyframes line1 {
+  0%{
+    left: -100%;
+  }
+  50%, 100%{
+    left: 100%;
+  }
+}
+@keyframes line2 {
+  0%{
+    top: -100%;
+  }
+  50%, 100%{
+    top: 100%;
+  }
+}
+@keyframes line3 {
+  0%{
+    right: -100%;
+  }
+  50%, 100%{
+    right: 100%;
+  }
+}
+@keyframes line4 {
+  0%{
+    bottom: -100%;
+  }
+  50%, 100%{
+    bottom: 100%;
+  }
+}
 p{
   margin-top: 1.1em;
   font-weight: 300;
@@ -160,13 +249,15 @@ header .nav-links li:hover ul{
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('Images/People.webp');
-  background-size: cover;
-  background-position: center center;
-  background-attachment: scroll;
-  flex-direction: column;
+  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
 }
-
+.background-video{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  z-index: -1;
+}
 .banner .content{
   max-width: 900px;
   text-align: center;
@@ -176,146 +267,75 @@ header .nav-links li:hover ul{
   flex-direction: column;
 }
 .banner .content h1{
-  font-size: 2.5em;
+  font-size: 4em;
   color: #fff;
 }
 .banner .content p{
   font-size: 1em;
   color: #fff;
 }
-.auto-type{
-  color: yellow;
-}
-.button{
-  position: relative;
-  text-decoration: none;
+a.btn{
+  font-size: 1em;
   color: #fff;
+  background: #A70035;
+  display: inline-block;
+  padding: 10px 30px;
+  margin: 20px;
+  margin-left: 0;
   text-transform: uppercase;
-  letter-spacing: 3px;
-  overflow: hidden;
-  transition: 500ms;
-  font-weight: 700;
-  padding: 20px;
-  align-self: center;
-  margin: 30px;
-  width: 250px;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: 0.5s;
+  font-weight: 800;
 }
-.button:hover{
-  background: #fff;
-  color: #111;
-}
-.button span{
-  position: absolute;
-  display: block;
-}
-.button span:nth-child(1){
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, #fff);
-  animation: line1 1s linear infinite;
-}
-.button span:nth-child(2){
-  top: -100%;
-  right: 0;
-  width: 2px;
-  height: 100%;
-  background: linear-gradient(180deg, transparent, #fff);
-  animation: line2 1s linear infinite;
-  animation-delay: 250ms;
-}
-.button span:nth-child(3){
-  bottom: 0;
-  right: -100%;
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(270deg, transparent, #fff);
-  animation: line3 1s linear infinite;
-  animation-delay: 500ms;
-}
-.button span:nth-child(4){
-  bottom: -100%;
-  left: 0;
-  width: 2px;
-  height: 100%;
-  background: linear-gradient(360deg, transparent, #fff);
-  animation: line4 1s linear infinite;
-  animation-delay: 750ms;
-}
-
-@keyframes line1 {
-  0%{
-    left: -100%;
-  }
-  50%, 100%{
-    left: 100%;
-  }
-}
-@keyframes line2 {
-  0%{
-    top: -100%;
-  }
-  50%, 100%{
-    top: 100%;
-  }
-}
-@keyframes line3 {
-  0%{
-    right: -100%;
-  }
-  50%, 100%{
-    right: 100%;
-  }
-}
-@keyframes line4 {
-  0%{
-    bottom: -100%;
-  }
-  50%, 100%{
-    bottom: 100%;
-  }
+.btn:hover{
+  letter-spacing: 6px;
 }
 section{
   padding: 100px;
-  position: relative;
 }
 .row{
   position: relative;
+  width: 100%;
   display: flex;
-  gap: 2em;
+  justify-content: space-between;
+  margin-top: 30px;
 }
-.row .card{
+.row .column{
   position: relative;
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0 7px 15px grey;
+  width: 48%;
 }
-.row .card .content{
+.row .column100{
+  width: 100% !important;
+}
+.about{
+  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('Images/scottishbuilding.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+
+}
+.about .content, .prevention .content{
+  background-color: #fff;
   padding: 30px;
-  position: relative;
 }
-.row .card .content p{
-  font-size: 0.9em;
+.titleText{
+  color: #111;
+  font-size: 2em;
+  font-weight: 400;
 }
-.row .card .content button{
-  border: none;
-  color: #fff;
-  background-color: #A70035;
-  padding: 15px 30px;
-  display: inline-block;
-  margin-top: 20px;
-  transition: all 500ms ease;
+.titleText span{
+  color: #A70035;
+  font-weight: 700;
+  font-size: 1.5em;
 }
-.row .card .content button:hover{
-  letter-spacing: 6px;
-}
-.imageBox{
+.row .column .imageBox{
   position: relative;
   width: 100%;
-  aspect-ratio: 16/9;
+  height: 100%;
 }
-.imageBox img{
+.row .column .imageBox img{
   position: absolute;
   top: 0;
   left: 0;
@@ -348,17 +368,60 @@ section{
 .footnotes li{
   font-size: 0.7em;
 }
+.container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+}
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+.title{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+}
+.white{
+  color: #fff;
+}
+.column.images .imageBox{
+  position: relative;
+}
 footer{
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 20px;
-  font-size: 1.2em;
 }
+/*footer::before{
+  content: '';
+  position: absolute;
+  width: 40%;
+  height: 2px;
+  background: #111;
+  top: -5px;
+}*/
 footer p{
   font-size: 0.8em;
+}
+.prevention{
+  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('Images/CulturalDance.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+}
+@supports not (background-attachment: fixed){
+  .about, .prevention, .banner{
+    background-attachment: scroll;
+  }
 }
 .hidden{
   opacity: 0;
@@ -370,66 +433,6 @@ footer p{
   filter: none;
   transform: translateY(0);
   opacity: 1;
-}
-.modal {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0);
-  transition: 200ms ease-in-out;
-  box-shadow: 0 0 5px black, 0 0 15px black;
-  border-radius: 10px;
-  z-index: 10;
-  background-color: white;
-  width: 500px;
-  max-width: 80%;
-}
-
-.modal.active {
-  transform: translate(-50%, -50%) scale(1);
-}
-
-.modal-header {
-  padding: 10px 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid black;
-}
-
-.modal-header .title {
-  font-size: 1.25rem;
-  font-weight: bold;
-}
-
-.modal-header .close-button {
-  cursor: pointer;
-  border: none;
-  outline: none;
-  background: none;
-  font-size: 1.25rem;
-  font-weight: bold;
-}
-
-.modal-body {
-  padding: 10px 15px;
-}
-
-#overlay {
-  position: fixed;
-  opacity: 0;
-  transition: 200ms ease-in-out;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, .5);
-  pointer-events: none;
-}
-
-#overlay.active {
-  opacity: 1;
-  pointer-events: all;
 }
 @media (perfers-reduced-motion) {
   .hidden{

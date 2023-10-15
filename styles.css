@@ -209,7 +209,7 @@ header .nav-links li{
   margin-left: 30px;
   position: relative;
 }
-header .nav-links li a{
+header .nav-links li a, header.nav-links li p{
   text-decoration: none;
   display: inline-block;
   color: #fff;
@@ -218,7 +218,7 @@ header .nav-links li a{
   border-radius: 30px;
   transition: 250ms all ease-in-out;
 }
-header.sticky .nav-links li a{
+header.sticky .nav-links li a, header.sticky .nav-links li p{
   color: #111;
 }
 header .nav-links li a:hover{
