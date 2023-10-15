@@ -224,29 +224,6 @@ header .nav-links li a:hover{
   animation: line4 1s linear infinite;
   animation-delay: 750ms;
 }
-.tilt {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
-
-.tilt svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 100px;
-}
-
-.tilt .shape-fill {
-    fill: #010303;
-}
-bottom tilt{
-  bottom: 0;
-}
 
 @keyframes line1 {
   0%{
