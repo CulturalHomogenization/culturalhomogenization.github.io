@@ -37,3 +37,14 @@ function handleScroll() {
   indicator.style.opacity = Math.max(opacity, 0);
 }
 window.addEventListener('scroll', handleScroll);
+
+const dialog = document.querySelector("dialog")
+const openModalButtons = document.querySelectorAll('open')
+const closeModalButtons = document.querySelectorAll('closeModal')
+
+function show(){
+  dialog.show()
+}
+function closeModal(){
+  dialog.close()
+}

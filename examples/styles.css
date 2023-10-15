@@ -5,6 +5,16 @@
   font-family: 'Poppins', sans-serif;
   scroll-behavior: smooth;
 }
+dialog{
+  z-index: 3;
+  border: none;
+  box-shadow: 0 0 15px grey;
+  border-radius: 15px;
+  padding: 15px;
+  max-width: 300px;
+  position: absolute;
+  top: 50px;
+}
 .button{
   position: relative;
   text-decoration: none;
