@@ -38,13 +38,19 @@ function handleScroll() {
 }
 window.addEventListener('scroll', handleScroll);
 
-const dialog = document.querySelector("dialog")
-const openModalButtons = document.querySelectorAll('open')
-const closeModalButtons = document.querySelectorAll('closeModal')
+const dialog = document.querySelectorAll("dialog")
+const openModalButtons = document.querySelectorAll('[data-modal-target]')
+const closeModalButtons = document.querySelectorAll('[data-close-button]')
 
-function show(){
-  dialog.show()
-}
-function closeModal(){
-  dialog.close()
-}
+openModalButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const modal = document.querySelector(button.dataset.modalTarget)
+    modal.show()
+  })
+})
+closeModalButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const modal = button.closest('dialog')
+    modal.close()
+  })
+})

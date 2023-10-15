@@ -12,8 +12,21 @@ dialog{
   border-radius: 15px;
   padding: 15px;
   max-width: 300px;
-  position: absolute;
-  top: 50px;
+  position: fixed;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.buttonModal{
+  font-size: 1.1em;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 0 5px;
+  transition: all 500ms ease-in-out;
+}
+.buttonModal:hover{
+  transform: translateY(-3px);
 }
 .button{
   position: relative;
