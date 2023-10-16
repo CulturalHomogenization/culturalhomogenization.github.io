@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Cache-control" content="public">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bibliography</title>
+    <link rel="icon" href="https://raw.githubusercontent.com/CulturalHomogenization/culturalhomogenization.github.io/main/Images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script defer src="controller.js"></script>
+    <meta name="description" content="Learn all about the issue plaguing our world right now known as cultural homogenisation, its effects, consequences and how we can preven its spread. Join us on this journey as we try to preserve the different cultures of the world from fading away.">
+    <meta name="keywords" content="cultural homogenisation, cultural imperialism">
+    <meta name="author" content="Ewan Diggle">
+    <meta name="author" content="Thomas Tonkin">
+    <meta name="author" content="Rohan Savarimuthu">
+    <meta name="author" content="Raymond Yang">
+    <link rel="canonical" href="https://culturalhomogenisation.org/">
+    <meta name="robots" content="nofollow, noindex">
+    <meta property="og:title" content="Bibliography" />
+    <meta property="og:url" content="https://culturalhomogenisation.org/" />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Learn all about the issue plaguing our world right now known as cultural homogenisation, its effects, consequences and how we can preven its spread. Join us on this journey as we try to preserve the different cultures of the world from fading away." />
+    <meta name="twitter:card" content="summary"></meta>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .stop{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100px;
+            width: 100vw;
+            background: rgba(0, 0, 0, 0.7);
+            margin: 0;
+            padding: 0;
+        }
+        
+        .bruhh{
+            height: 200px
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            padding: 40px 100px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 100000000;
+            align-items: center;
+            transition: 0.5s;
+        }
+        header.sticky{
+            background: #fff;
+            padding: 10px 100px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+        }
+        header.sticky .logo{
+            color: #111;
+        }
+        header .nav-links{
+            display: flex;
+            position: relative;
+            list-style: none;
+        }
+        header .logo{
+            text-decoration: none;
+            color: #fff;
+            font-weight: 700;
+            font-size: 2em;
+        }
+        header .logo span{
+            color: #A70035;
+        }
+        header .nav-links li{
+            margin-left: 30px;
+            position: relative;
+        }
+        header .nav-links li a, header.nav-links li p{
+            text-decoration: none;
+            display: inline-block;
+            color: #fff;
+            font-weight: 300;
+            padding: 10px 15px;
+            border-radius: 30px;
+            transition: 250ms all ease-in-out;
+        }
+        header.sticky .nav-links li a, header.sticky .nav-links li p{
+            color: #111;
+        }
+        header .nav-links li a:hover{
+            color: #A70035;
+        }
+        header .nav-links li ul{
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            list-style: none;
+            padding: 0 20px;
+            right: 0;
+        }
+        header .nav-links li ul li{
+            margin-left: 0;
+            width: 100%;
+        }
+        header .nav-links li ul li a{
+            color: black;
+        }
+        header .nav-links li:hover ul{
+            display: block;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            color: #333;
+            margin: 20px;
+        }
+        .bibliography {
+            background-color: #fff;
+            padding: 50px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .bibliography li {
+            margin-bottom: 30px;
+        }
+        @media (max-width: 991px){
+            header, header.sticky{
+                padding: 10px 20px;
+            }
+            header .nav-links{
+                display: none;
+            }
+            .menuToggle{
+                position: relative;
+                width: 40px;
+                height: 40px;
+                background: url("Images/menu.webp");
+                background-size: 30px;
+                background-repeat: no-repeat;
+                background-position: center;
+                cursor: pointer;
+            }
+            .menuToggle.active{
+                background: url("Images/close.webp");
+                background-size: 30px;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+            header .menuToggle{
+                filter: invert(1);
+            }
+            header.sticky .menuToggle{
+                filter: invert(0);
+            }
+            header .nav-links.active{
+                width: 100%;
+                height: calc(100% - 68px);
+                position: fixed;
+                top: 68px;
+                left: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                background: #fff;
+            }
+            header .nav-links li{
+                margin-left: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            header .nav-links li a{
+                text-decoration: none;
+                font-size: 1.3em;
+                color: #111;
+                font-weight: 300;
+            }
+            header .nav-links li ul{
+                display: block;
+                position: relative;
+                background-color: none;
+            }
+            header .nav-links li .dropdown li{
+                font-size: 0.8em;
+            }
+            section{
+                padding: 20px;
+            }
+            .banner .content h1{
+                font-size: 2em;
+            }
+            .row{
+                flex-direction: column;
+            }
+            .row .column{
+                position: relative;
+                width: 100%;
+            }
+            .row .column p{
+                font-size: 1.2em;
+            }
+            .row .column .imageBox{
+                height: 300px;
+                width: 100%;
+                margin-top: 20px;
+            }
+            .titleText{
+                font-size: 1.8em;
+                line-height: 1.5em;
+                margin-bottom: 15px;
+                font-weight: 300;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="https://culturalhomogenisation.org" class="logo">CulturalH<span>.</span></a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="nav-links">
+          <li><a href="https://culturalhomogenisation.org/" onclick="toggleMenu();">Home</a></li>
+          <li><a href="https://culturalhomogenisation.org/about" onclick="toggleMenu();">About</a></li>
+          <li><a href="https://culturalhomogenisation.org/examples" onclick="toggleMenu();">Examples</a></li>
+          <li><a href="https://culturalhomogenisation.org/solutions" onclick="toggleMenu();">Prevention</a></li>  
+          <li>
+            <a>Other</a>
+            <ul class="dropdown">
+              <li><a href="#">Documentary</a></li>
+              <li><a href="#">Causes and Consequences</a></li>
+              <li><a href="#">Perspectives</a></li>
+              <li><a href="#">Feedback</a></li>
+            </ul>
+          </li>
+          
+        </ul>
+      </header>
+      <section class="stop"></section>
+      <div class="bruhh"></div>
+    <h1>Bibliography</h1>
+    <ol class="bibliography">
+        <li>Grundy, A. <em>United States Census Bureau</em>. “Service Annual Survey Shows Continuing Decline in Print Publishing Revenue”. Date last modified June 7, 2022. <a href="https://www.census.gov/library/stories/2022/06/internet-crushes-traditional-media.html">https://www.census.gov/library/stories/2022/06/internet-crushes-traditional-media.html</a>. Date accessed September 23, 2023.</li>
+        <li>Grundy, A. <em>United States Census Bureau</em>. “Service Annual Survey Shows Continuing Decline in Print Publishing Revenue.” Date last modified June 07, 2022. <a href="https://www.census.gov/library/stories/2022/06/internet-crushes-traditional-media.html">https://www.census.gov/library/stories/2022/06/internet-crushes-traditional-media.html</a>. Date accessed August 24, 2023.</li>
+        <li>Hynes, M. <em>Emerald Insight</em>. “ The Social, Cultural and Environmental Costs of Hyper-Connectivity: Sleeping Through the Revolution”. Date last modified August 17, 2021. <a href="https://www.emerald.com/insight/content/doi/10.1108/978-1-83909-976-220211003/full/html">https://www.emerald.com/insight/content/doi/10.1108/978-1-83909-976-220211003/full/html</a>. Date accessed September 13, 2023.</li>
+        <li>Lundup, T. <em>JSTOR</em>. “Contemporary Ladakh: Culture, Commodification and Tourism.” Date uploaded August 1, 2013. <a href="https://www.jstor.org/stable/resrep09050?typeAccessWorkflow=login">https://www.jstor.org/stable/resrep09050?typeAccessWorkflow=login</a>. Date accessed October 14, 2023.</li>
+        <li>Randolph, B. DeMulder, E. <em>Bu.edu</em>. “I Didn't Know There Were Cities in Africa!”. <a href="https://www.bu.edu/africa/files/2016/02/Randolph-et-al-Cities-in-Africa-2008.pdf">https://www.bu.edu/africa/files/2016/02/Randolph-et-al-Cities-in-Africa-2008.pdf</a>. Date accessed September 17, 2023.</li>
+        <li>Shahzalal, M. <em>IISTE</em>. “Positive and Negative Impacts of Tourism on Culture: A Critical Review of Examples from the Contemporary Literature.”  <a href="https://core.ac.uk/download/pdf/234696865.pdf">https://core.ac.uk/download/pdf/234696865.pdf</a>. Date accessed October 14, 2023.</li>
+        <li>Shearer, E. <em>Pew Research Center</em>. “More than eight-in-ten Americans get news from digital devices.” Date last modified January 12, 2021. <a href="https://www.pewresearch.org/short-reads/2021/01/12/more-than-eight-in-ten-americans-get-news-from-digital-devices/">https://www.pewresearch.org/short-reads/2021/01/12/more-than-eight-in-ten-americans-get-news-from-digital-devices/</a>. Date accessed August 14, 2023.</li>
+        <li>Taddesse, B. Mulu, Y, Hussein, J. Alamineh, G. <em>Taylor&Francis Online.</em>. “The negative cultural impact of tourism and its implication on sustainable development in Amhara Regional State”.  Date uploaded June 17, 2023. <a href="https://www.tandfonline.com/doi/full/10.1080/23311983.2023.2224597">https://www.tandfonline.com/doi/full/10.1080/23311983.2023.2224597</a>. Date accessed October 15, 2023.</li>
+        <li>Tarihi, G. <em>DergiPark</em>. “THE RELATIONSHIP BETWEEN TOURISM AND COMMODIFICATION: A CONCEPTUAL APPROACH.” Date uploaded May 23, 2017. <a href="https://dergipark.org.tr/tr/download/article-file/381102">https://dergipark.org.tr/tr/download/article-file/381102</a>. Date accessed October 14, 2023.</li>
+        <li>Unknown Author. <em>Britannica</em>. “Westernization.” <a href="https://www.britannica.com/topic/Westernization">https://www.britannica.com/topic/Westernization</a>. Date accessed October 14, 2023.</li>
+        <li>Unknown Author. <em>FranceHoteGuide.com</em>. “Positive and Negative Impacts of Tourism in Paris.” Date last modified January 14, 2022. <a href="https://www.france-hotel-guide.com/en/blog/impacts-tourism-paris/">https://www.france-hotel-guide.com/en/blog/impacts-tourism-paris/</a>. Date accessed October 14, 2023.</li>
+        <li>Unknown Author. <em>Statista</em>. “Digital Media - Worldwide.” <a href="https://www.statista.com/outlook/dmo/digital-media/worldwide">https://www.statista.com/outlook/dmo/digital-media/worldwide</a>. Date accessed August 14, 2023.</li>
+        <li>Worlddata.info. “Chinese speaking countries”. <em>WorldData.info</em>. <a href="https://www.worlddata.info/languages/chinese.php">https://www.worlddata.info/languages/chinese.php</a>. Date accessed October 16, 2023.</li>
+        <li>Vaghefi, S. “Cultural Homogenization: 10 Examples And Definition”. <em>Helpfulprofessor.com</em>. Date last modified August 16, 2023. <a href="https://helpfulprofessor.com/cultural-homogenization/">https://helpfulprofessor.com/cultural-homogenization/</a>. Date accessed August 20, 2023.</li>
+    </ol>
+    <script>
+        window.addEventListener('scroll', function(){
+            const header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        })
+        function toggleMenu(){
+            const menuToggle = document.querySelector('.menuToggle');
+            const navigation = document.querySelector('.nav-links');
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
